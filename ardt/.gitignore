@@ -1,0 +1,4 @@
+# Outputs of train_ardt.sh
+models_ardt_tuned/
+results_ardt_tuned/
+__pycache__/

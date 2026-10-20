@@ -1,0 +1,30 @@
+# Software used for the paper's training runs (Linux, NVIDIA GPU).
+#
+#   conda env create -f environment.yml
+#   conda activate rhdt
+#
+# mujoco-py also needs the MuJoCo 2.1.0 binaries; see README.md.
+# torch below is the default PyPI build; for another CUDA version, install the
+# matching torch 2.11 build from pytorch.org instead.
+name: rhdt
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - mesalib            # OSMesa for mujoco-py
+  - pip:
+      - torch==2.11.0
+      - numpy==1.26.4
+      - tqdm==4.69.0
+      - datasets==2.21.0
+      - huggingface-hub==0.23.5
+      - gym==0.23.1
+      - cython==0.29.37    # mujoco-py does not build with Cython 3
+      - patchelf==0.17.2.4
+      - mujoco-py==2.1.2.14
+      - d4rl==1.1
+      - transformers==4.44.2   # GPT-2 backbone of the baselines (../ardt)
+variables:
+  MUJOCO_PY_FORCE_CPU: '1'
+  D4RL_SUPPRESS_IMPORT_ERROR: '1'

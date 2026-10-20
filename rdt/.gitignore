@@ -1,0 +1,4 @@
+# Outputs of train_rdt.sh
+models_rdt_tuned/
+results_rdt_tuned/
+__pycache__/

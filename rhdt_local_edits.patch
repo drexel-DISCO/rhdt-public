@@ -1,0 +1,43 @@
+diff --git a/ablation/ablation.sh b/ablation/ablation.sh
+index c7bb0b9..6b9195d 100755
+--- a/ablation/ablation.sh
++++ b/ablation/ablation.sh
+@@ -42,6 +42,7 @@ PYTHON=${PYTHON:-python}
+ 
+ # Variant -> "<config for train.sh -c> <Hopfield iterations>"
+ ALL_VARIANTS="full gp_only sep_only non no_hopfield one_head"
++#ALL_VARIANTS="gp_only sep_only non no_hopfield one_head"
+ variant_spec() {  # <variant>
+     case $1 in
+         full)        echo "tuned 1" ;;
+@@ -63,6 +64,7 @@ JOBS=6
+ MODE=all
+ EPISODES=50
+ CORRUPTIONS=0.0,0.1,0.2,0.3
++#CORRUPTIONS=0.0,0.3
+ EVAL_SEEDS=11,13,17,19,23,29,31,37,41,43
+ MODELS_ROOT=$SCRIPT_DIR/models_ablation
+ RESULTS_ROOT=$SCRIPT_DIR/results_ablation
+diff --git a/ardt/train_ardt.sh b/ardt/train_ardt.sh
+index 70193b5..80ab7c4 100755
+--- a/ardt/train_ardt.sh
++++ b/ardt/train_ardt.sh
+@@ -43,14 +43,16 @@ task_settings=(
+   "hopper-medium-v2                0.8      100000         5000          10000"
+   "hopper-medium-replay-v2         1.0      100000         5000          20000"
+   "walker2d-medium-v2              0.8      100000         5000          10000"
+-  "walker2d-medium-replay-v2       1.0      100000         5000          10000"
++  "walker2d-medium-replay-v2       1.0      100000         5000          20000"
+ )
+ # Changing a row does not retrain existing checkpoints (they are skipped, with a
+ # warning if their saved settings differ); use -f TASK to retrain that model.
++  #"walker2d-medium-replay-v2       1.0      100000         5000          10000"
+ 
+ # Extra train_ardt.py flags for checkpoint selection (see ckpt_selection.py), e.g.
+ # SELECTION_ARGS=(--select-metric none) to keep the final weights. Empty = defaults.
+-SELECTION_ARGS=()
++#SELECTION_ARGS=()
++SELECTION_ARGS=(--select-metric none)
+ 
+ # In a terminal, the progress bar of every running training is shown live. When the
+ # output goes to a file, a status report is printed every PROGRESS_EVERY seconds

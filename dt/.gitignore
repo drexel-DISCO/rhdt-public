@@ -1,0 +1,4 @@
+# Outputs of train_dt.sh
+models_dt_tuned/
+results_dt_tuned/
+__pycache__/

@@ -1,0 +1,4 @@
+# Outputs of train.sh and train_rhdt.py
+models_rhdt_sweep/
+models_rhdt/
+__pycache__/

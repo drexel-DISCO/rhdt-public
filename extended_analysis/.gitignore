@@ -1,0 +1,4 @@
+# Outputs of extended_analysis.sh
+models_extended/
+results_extended/
+__pycache__/

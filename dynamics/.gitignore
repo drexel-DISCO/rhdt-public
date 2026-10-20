@@ -1,0 +1,4 @@
+# Outputs of dynamics.sh
+models_dynamics/
+results_dynamics/
+__pycache__/

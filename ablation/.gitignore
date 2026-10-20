@@ -1,0 +1,4 @@
+# Outputs of ablation.sh
+models_ablation/
+results_ablation/
+__pycache__/

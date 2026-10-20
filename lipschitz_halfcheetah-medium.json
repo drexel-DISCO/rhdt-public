@@ -1,0 +1,616 @@
+{
+  "task": "halfcheetah-medium-v2",
+  "seeds": [
+    "907561",
+    "48213",
+    "2024887",
+    "739104",
+    "26451",
+    "42"
+  ],
+  "data_seed": 0,
+  "batches": 8,
+  "batch_size": 64,
+  "results": {
+    "full": {
+      "0.0": {
+        "907561": {
+          "lip_mean": 1.5355578660964966,
+          "lip_median": 1.340614676475525,
+          "fro2_mean": 3.909815788269043,
+          "pen_mean": 0.27809450030326843,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.5450562238693237,
+          "lip_median": 1.362113356590271,
+          "fro2_mean": 3.929779291152954,
+          "pen_mean": 0.29114821553230286,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.5613274574279785,
+          "lip_median": 1.3599175214767456,
+          "fro2_mean": 4.040267467498779,
+          "pen_mean": 0.28284981846809387,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.5523571968078613,
+          "lip_median": 1.3643537759780884,
+          "fro2_mean": 4.010710716247559,
+          "pen_mean": 0.25565433502197266,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.5599547624588013,
+          "lip_median": 1.3577845096588135,
+          "fro2_mean": 4.070250988006592,
+          "pen_mean": 0.27940356731414795,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.53814697265625,
+          "lip_median": 1.3599183559417725,
+          "fro2_mean": 3.8993654251098633,
+          "pen_mean": 0.29720598459243774,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      },
+      "0.3": {
+        "907561": {
+          "lip_mean": 1.5299429893493652,
+          "lip_median": 1.3271312713623047,
+          "fro2_mean": 3.906546115875244,
+          "pen_mean": 0.35495346784591675,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.5325922966003418,
+          "lip_median": 1.3443350791931152,
+          "fro2_mean": 3.874871253967285,
+          "pen_mean": 0.37163257598876953,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.5479153394699097,
+          "lip_median": 1.3457658290863037,
+          "fro2_mean": 3.9789960384368896,
+          "pen_mean": 0.37453389167785645,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.5557140111923218,
+          "lip_median": 1.3565685749053955,
+          "fro2_mean": 4.0759477615356445,
+          "pen_mean": 0.34049949049949646,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.5497585535049438,
+          "lip_median": 1.3538721799850464,
+          "fro2_mean": 4.025116920471191,
+          "pen_mean": 0.36466941237449646,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.535122275352478,
+          "lip_median": 1.339424967765808,
+          "fro2_mean": 3.8980205059051514,
+          "pen_mean": 0.3806478977203369,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      }
+    },
+    "no_gp": {
+      "0.0": {
+        "907561": {
+          "lip_mean": 1.8262673616409302,
+          "lip_median": 1.550386905670166,
+          "fro2_mean": 5.622498512268066,
+          "pen_mean": 4.160585880279541,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.8216183185577393,
+          "lip_median": 1.5634689331054688,
+          "fro2_mean": 5.555445671081543,
+          "pen_mean": 4.0353217124938965,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.8214218616485596,
+          "lip_median": 1.5690969228744507,
+          "fro2_mean": 5.5764546394348145,
+          "pen_mean": 4.12939977645874,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.8207783699035645,
+          "lip_median": 1.5611947774887085,
+          "fro2_mean": 5.554744720458984,
+          "pen_mean": 4.174400806427002,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.8358653783798218,
+          "lip_median": 1.5741158723831177,
+          "fro2_mean": 5.647791862487793,
+          "pen_mean": 4.1622514724731445,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.8333189487457275,
+          "lip_median": 1.568172812461853,
+          "fro2_mean": 5.639060974121094,
+          "pen_mean": 4.224232196807861,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      },
+      "0.3": {
+        "907561": {
+          "lip_mean": 1.8373264074325562,
+          "lip_median": 1.5657684803009033,
+          "fro2_mean": 5.661020278930664,
+          "pen_mean": 4.180446624755859,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.8223406076431274,
+          "lip_median": 1.5635329484939575,
+          "fro2_mean": 5.528813362121582,
+          "pen_mean": 4.054050445556641,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.8211069107055664,
+          "lip_median": 1.5794360637664795,
+          "fro2_mean": 5.507567882537842,
+          "pen_mean": 4.077969074249268,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.8222500085830688,
+          "lip_median": 1.5708142518997192,
+          "fro2_mean": 5.564605236053467,
+          "pen_mean": 4.146627426147461,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.8249378204345703,
+          "lip_median": 1.572669267654419,
+          "fro2_mean": 5.56480073928833,
+          "pen_mean": 4.089762210845947,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.823439598083496,
+          "lip_median": 1.571863055229187,
+          "fro2_mean": 5.553585052490234,
+          "pen_mean": 4.182644844055176,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-sep/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.05,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      }
+    },
+    "gp_only": {
+      "0.0": {
+        "907561": {
+          "lip_mean": 1.604224681854248,
+          "lip_median": 1.3873834609985352,
+          "fro2_mean": 4.340157508850098,
+          "pen_mean": 0.2737310826778412,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.602131962776184,
+          "lip_median": 1.3857944011688232,
+          "fro2_mean": 4.287403106689453,
+          "pen_mean": 0.26757705211639404,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.593100905418396,
+          "lip_median": 1.389345407485962,
+          "fro2_mean": 4.252113342285156,
+          "pen_mean": 0.26592788100242615,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.615052580833435,
+          "lip_median": 1.3843085765838623,
+          "fro2_mean": 4.382832050323486,
+          "pen_mean": 0.24955864250659943,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.5921162366867065,
+          "lip_median": 1.3815643787384033,
+          "fro2_mean": 4.2282280921936035,
+          "pen_mean": 0.2533555030822754,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.5875072479248047,
+          "lip_median": 1.387827754020691,
+          "fro2_mean": 4.154914379119873,
+          "pen_mean": 0.26465025544166565,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      },
+      "0.3": {
+        "907561": {
+          "lip_mean": 1.6036241054534912,
+          "lip_median": 1.3900656700134277,
+          "fro2_mean": 4.309698104858398,
+          "pen_mean": 0.3546850383281708,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.5933787822723389,
+          "lip_median": 1.3828136920928955,
+          "fro2_mean": 4.235239028930664,
+          "pen_mean": 0.3496236503124237,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.5777778625488281,
+          "lip_median": 1.3744237422943115,
+          "fro2_mean": 4.146962642669678,
+          "pen_mean": 0.3519984483718872,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.6137064695358276,
+          "lip_median": 1.3873549699783325,
+          "fro2_mean": 4.359478950500488,
+          "pen_mean": 0.3167964220046997,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.5770879983901978,
+          "lip_median": 1.368260145187378,
+          "fro2_mean": 4.158820152282715,
+          "pen_mean": 0.3482932448387146,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.6025416851043701,
+          "lip_median": 1.3992525339126587,
+          "fro2_mean": 4.24330997467041,
+          "pen_mean": 0.33516088128089905,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/gpheavy-gp/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.005,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      }
+    },
+    "none": {
+      "0.0": {
+        "907561": {
+          "lip_mean": 1.8725636005401611,
+          "lip_median": 1.5963298082351685,
+          "fro2_mean": 5.9213948249816895,
+          "pen_mean": 4.402034282684326,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.853969931602478,
+          "lip_median": 1.5844415426254272,
+          "fro2_mean": 5.794024467468262,
+          "pen_mean": 4.252431869506836,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.867814540863037,
+          "lip_median": 1.5998878479003906,
+          "fro2_mean": 5.843997955322266,
+          "pen_mean": 4.29344367980957,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.8559575080871582,
+          "lip_median": 1.5745213031768799,
+          "fro2_mean": 5.801050662994385,
+          "pen_mean": 4.281681060791016,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.857998251914978,
+          "lip_median": 1.5828230381011963,
+          "fro2_mean": 5.811639308929443,
+          "pen_mean": 4.257331848144531,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.8617677688598633,
+          "lip_median": 1.6034709215164185,
+          "fro2_mean": 5.8212385177612305,
+          "pen_mean": 4.413729190826416,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      },
+      "0.3": {
+        "907561": {
+          "lip_mean": 1.8688945770263672,
+          "lip_median": 1.5996836423873901,
+          "fro2_mean": 5.853719234466553,
+          "pen_mean": 4.327704429626465,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_907561/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "48213": {
+          "lip_mean": 1.8582853078842163,
+          "lip_median": 1.6053564548492432,
+          "fro2_mean": 5.749239444732666,
+          "pen_mean": 4.224958896636963,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_48213/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "2024887": {
+          "lip_mean": 1.860854148864746,
+          "lip_median": 1.6030350923538208,
+          "fro2_mean": 5.767792224884033,
+          "pen_mean": 4.1996073722839355,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_2024887/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "739104": {
+          "lip_mean": 1.8572043180465698,
+          "lip_median": 1.59796142578125,
+          "fro2_mean": 5.756224155426025,
+          "pen_mean": 4.282310485839844,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_739104/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "26451": {
+          "lip_mean": 1.8558355569839478,
+          "lip_median": 1.5894238948822021,
+          "fro2_mean": 5.777393341064453,
+          "pen_mean": 4.287764549255371,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_26451/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        },
+        "42": {
+          "lip_mean": 1.865938425064087,
+          "lip_median": 1.5989561080932617,
+          "fro2_mean": 5.838453769683838,
+          "pen_mean": 4.403599262237549,
+          "n_states": 10129,
+          "checkpoint": "/home/Drexel/ad3639/Research/mhn/neurips/rhdt_cr/rhdt_final/ablation/models_ablation/iter1/non/seed_42/rhdt_halfcheetah-medium-v2.pt",
+          "lambda_gp": 0.0,
+          "lambda_sep": 0.0,
+          "num_heads": 4,
+          "num_iterations": 1
+        }
+      }
+    }
+  }
+}

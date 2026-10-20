@@ -1,0 +1,200 @@
+[
+  {
+    "method": "RHDT",
+    "task": "halfcheetah-medium-v2",
+    "settings": {
+      "config": "gpheavy",
+      "lambda_gp": 0.005,
+      "lambda_sep": 0.05,
+      "heads": 4,
+      "hopfield_iterations": 1
+    },
+    "device": "cuda:0",
+    "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "deterministic": true,
+    "parameters": 727558,
+    "inference": {
+      "mean_ms": 1.909982142969966,
+      "std_ms": 0.013352721380225079,
+      "median_ms": 1.9088906701654196,
+      "p95_ms": 1.9248855765908957,
+      "n": 1000,
+      "episode_s": 2.0855189221911132,
+      "peak_mib": 36.38818359375,
+      "weights_mib": 2.77587890625,
+      "warmup": {
+        "runs": 5311,
+        "seconds": 10.000175985042006
+      }
+    },
+    "training": {
+      "mean_ms": 13.90953145828098,
+      "std_ms": 0.26830595381442823,
+      "median_ms": 13.87180294841528,
+      "p95_ms": 14.207977964542806,
+      "n": 1000,
+      "peak_mib": 400.5673828125,
+      "run_steps": 100000,
+      "warmup": {
+        "runs": 691,
+        "seconds": 10.012642055749893
+      }
+    }
+  },
+  {
+    "method": "DT",
+    "task": "halfcheetah-medium-v2",
+    "settings": {},
+    "device": "cuda:0",
+    "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "deterministic": true,
+    "parameters": 858758,
+    "inference": {
+      "mean_ms": 1.2546628387644887,
+      "std_ms": 0.036107290971402556,
+      "median_ms": 1.2492879759520292,
+      "p95_ms": 1.2603199109435081,
+      "n": 1000,
+      "episode_s": 1.4318236648105085,
+      "peak_mib": 40.16015625,
+      "weights_mib": 6.27783203125,
+      "warmup": {
+        "runs": 6965,
+        "seconds": 10.00080186035484
+      }
+    },
+    "training": {
+      "mean_ms": 4.5297803417779505,
+      "std_ms": 0.22824434615554964,
+      "median_ms": 4.510063445195556,
+      "p95_ms": 4.9534515012055635,
+      "n": 1000,
+      "peak_mib": 173.53076171875,
+      "run_steps": 100000,
+      "warmup": {
+        "runs": 1943,
+        "seconds": 10.000829339027405
+      }
+    }
+  },
+  {
+    "method": "RDT",
+    "task": "halfcheetah-medium-v2",
+    "settings": {
+      "beta_a": 0.1,
+      "beta_r": 0.0,
+      "reward_loss_weight": 0.0,
+      "embedding_dropout": 0.05
+    },
+    "device": "cuda:0",
+    "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "deterministic": true,
+    "parameters": 859143,
+    "inference": {
+      "mean_ms": 1.2834944259375334,
+      "std_ms": 0.03198423955657237,
+      "median_ms": 1.2791268527507782,
+      "p95_ms": 1.288354187272489,
+      "n": 1000,
+      "episode_s": 1.4618641240522265,
+      "peak_mib": 40.162109375,
+      "weights_mib": 6.27978515625,
+      "warmup": {
+        "runs": 7030,
+        "seconds": 10.001163352280855
+      }
+    },
+    "training": {
+      "mean_ms": 4.956357973162085,
+      "std_ms": 0.27873058903173237,
+      "median_ms": 4.835337633267045,
+      "p95_ms": 5.2960921777412295,
+      "n": 1000,
+      "peak_mib": 173.98876953125,
+      "run_steps": 100000,
+      "warmup": {
+        "runs": 1822,
+        "seconds": 10.001310340128839
+      }
+    }
+  },
+  {
+    "method": "ARDT",
+    "task": "halfcheetah-medium-v2",
+    "settings": {
+      "alpha": 0.1,
+      "warmup_steps": 5000,
+      "minimax_steps": 20000,
+      "validation_episodes": 50
+    },
+    "device": "cuda:0",
+    "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "deterministic": true,
+    "parameters": 858758,
+    "inference": {
+      "mean_ms": 1.2498888578265905,
+      "std_ms": 0.03434999100122089,
+      "median_ms": 1.2451859656721354,
+      "p95_ms": 1.2529479572549462,
+      "n": 1000,
+      "episode_s": 1.4264043658040464,
+      "peak_mib": 40.16015625,
+      "weights_mib": 6.27783203125,
+      "warmup": {
+        "runs": 7059,
+        "seconds": 10.001295933965594
+      }
+    },
+    "training": {
+      "mean_ms": 4.505387315992266,
+      "std_ms": 0.21223938861053385,
+      "median_ms": 4.483398515731096,
+      "p95_ms": 4.91617361549288,
+      "n": 1000,
+      "peak_mib": 173.53076171875,
+      "run_steps": 100000,
+      "warmup": {
+        "runs": 1954,
+        "seconds": 10.001593925990164
+      }
+    },
+    "stages": {
+      "value_network_parameters": 275970,
+      "value_warmup": {
+        "mean_ms": 1.5003467840142548,
+        "std_ms": 0.13518779207809514,
+        "median_ms": 1.5353085473179817,
+        "p95_ms": 1.6682176385074854,
+        "n": 1000,
+        "peak_mib": 71.05908203125,
+        "run_steps": 5000,
+        "warmup": {
+          "runs": 3982,
+          "seconds": 10.002179758157581
+        }
+      },
+      "minimax": {
+        "mean_ms": 2.121085708029568,
+        "std_ms": 0.10054501078192299,
+        "median_ms": 2.079494995996356,
+        "p95_ms": 2.2746057715266943,
+        "n": 1000,
+        "peak_mib": 71.06201171875,
+        "run_steps": 20000,
+        "warmup": {
+          "runs": 3173,
+          "seconds": 10.001434624195099
+        }
+      },
+      "relabel_s": 0.25708360271528363
+    }
+  }
+]
